@@ -201,15 +201,149 @@ Etapas do programador:
 - Implementação das classes
 - Implementação dos métodos
 
-## Cascata
+Os membros da equipe trabalham ao mesmo tempo, não dependendo do progresso de outros processos para dar andamento no seu próprio.
 
-## Cascata
+## Técnicas de quarta geração
 
-## Cascata
+Engloba um conjunto de ferramentas de software que possibilitam que o sistema seja especificado em linguagem de alto nível e o código fonte seja gerado automaticamente a partir dessas especificações
 
-## Cascata
+Exemplo: Figma
 
-## Cascata
+Etapas:
 
-## Cascata
+- Obtenção de requisitos
+- Estratégia de projeto
+- Implementação usando técnicas de quarta geração
+- Testes
+
+## Métodos Formais
+
+Especificar, desenvolver e verificar um sistema pela aplicação de uma notação matemática
+
+Desenvolvimento do programa em modelo matemático, seguido de um cálculo de probabilidade de corretude do programa.
+
+> Cleanroom: exemplo mais conhecido. Desenvolvimento incremental onde a correção de cada etapa é demonstrada com um experimento estatístico.
+
+Como pontos negativos, esse método pode ser de difícil compreensão e corre o risco de ser um desperdício no desenvolvimento de sistemas simples e cotidianos.
+
+Como pontos positivos, esse método é útil para sistemas que não podem falhar em hipótese alguma, onde caso contrário os resultados seriam catastróficos, portanto, é necessário ter 100% de certeza de que o sistema terá sucesso, e para isso é válido recorrer ao rigor matemático. Exemplos de sistemas críticos onde é válido usar esse método, seriam sistemas de controles de usinas nucleares, controle de tráfego aéreo e sistemas de UTIs.
+
+## _Rapid Application Develpment_ (RAD)
+
+Método que consiste na quebra do sistema em diferentes funcionalidades que serão distribuidas entre várias equipes que ficarão responsáveis por desenvolvê-las
+
+Observe o exemplo abaixo
+
+### Equipe 1
+
+- Modelagem do negócio
+- Modelagem dos dados
+- Modelagem do processo
+- Geração da aplicação (Componentes e técnicas de 4G - Quarta Geração, não confundir com 4g de dados móveis)
+- Teste e modificação
+
+### Equipe 2
+
+- Modelagem do negócio
+- Modelagem dos dados
+- Modelagem do processo
+- Geração da aplicação (Componentes e técnicas de 4G - Quarta Geração, não confundir com 4g de dados móveis)
+- Teste e modificação
+
+Trabalho paralelo entre as equipes
+
+Como pontos positivos, esse método tende a resolver as funcionalidades com uma velocidade atraente
+
+Como pontos negativos, naturalmente a divisão de pequenas funcionalidades em diferentes equipes vai requerer muitos profissionais para compor as equipes
+
+## Métodos Ágeis
+
+Voltados a softwares cujos requisitos são vagos ou mudam constantemente
+
+- _Feature Driven Development_ (FDD)
+- _Crystal Clear_
+- _Dynamic Systems Development Method_ (DSDM)
+- _eXtreme Programming_ (XP)
+
+Características:
+
+- Times pequenos e multidisciplinares
+- Envolvimento do cliente
+- Desenvolvimento iterativo e incremental
+- Iterações curtas
+- Desenvolvimento orientado a teste
+- Quadro de tarefas
+- Reunião diária
+- Integração contínua (Não fazer a integração apenas no final do desenvolvimento)
+- Programação em pares (Pair Programming)
+- Refatoração do código (Revisar o código, se abrange todos os casos, organizar, etc.)
+- Documentar apenas o necessário
+
+Um possível problema desse método é a não disponibilidade do cliente para ter tanto contato com a equipe de desenvolvimento.
+
+Técnicas que podem ser usadas em conjunto com outros modelos de processo vistos anteriormente.
+
+
+## Processo Unificado
+
+Baseado nos modelos incremental, espiral e de componentes
+
+Tenta reunir os pontos positivos dos modelos apresentados anteriormente
+
+Principais características:
+
+- Baseado em casos de uso (Exemplos de uso, uma situação que pode acontecer no sistema)
+- Iterativo e incremental 
+- Centrado em arquitetura
+
+Esse modelo baseia sua construção encima dos casos de uso que se espera do sistema.
+
+Se apoia na arquitetura de interação entre os componentes
+
+Composto por ciclos que são divididos em fases
+
+Propôe um repositório de componentes, assim como no modelo de componentes.
+
+> Níveis de abstração: Processo > Ciclos de desenvolvimento > Fase > Iteração
+
+Fases do ciclo:
+
+- Concepção
+- Elaboração
+- Construção
+- Transição
+
+Cada mudança de fase tem um **marco de referência**, cada mudança de iteração demarca uma versão diferente.
+
+Iterações das fases são divididas em disciplinas
+
+Disciplinas:
+
+- Modelagem de Negócios
+- Requisitos
+- Análise e Design
+- Implementação
+- Teste
+- Implatação
+- Geren. de Configuração e Mudança
+- Gerenciamento de Projeto
+- Ambiente
+
+Iterações das fases:
+
+- Iniciação
+- Elaboração
+- Construção
+- Transição
+
+Artefatos (produtos gerados ao longo do desenvolvimento)
+
+- Modelo de casos de uso
+- Modelo de análise
+- Modelo de projeto
+- Modelo de implementação
+- Modelo de implantação
+- Modelo de testes
+- Representação da arquitetura
+
 
