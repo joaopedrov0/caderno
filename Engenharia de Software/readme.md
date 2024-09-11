@@ -350,6 +350,15 @@ Artefatos (produtos gerados ao longo do desenvolvimento)
 
 # Gerenciamento de Configuração de Software
 
+- Tarefas preliminares
+- Identificação dos itens de configuração
+- Controle de mudanças
+- Controle de versão
+- Auditoria de configuração
+- Preparação de relatórios de estado
+- Controle de interface
+- Controle de subcontratados e fornecedores
+
 ## Configurações de software (Comparável à Versão de software)
 
 Subconjunto de artefatos do desenvolvimento de software que terão suas alterações controladas
@@ -369,3 +378,100 @@ Artefato que foi devidamente revisado e aprovado, portanto, confia-se que ele es
 > Ao final de uma Definição do Sistema, pode-se gerar um documento de Especificação do Sistema. Esse documento, quando devidamente revisado e aprovado, demarca o final da etapa de Definição do Sistema, portanto pode ser considerado um **Marco de Referência**.
 
 Um Marco de Referência serve como base para construções futuras.
+
+## Tarefas preliminares
+
+### Seleção de itens a serem gerenciados
+
+Uma documentação escassa pode não separar devidamente as tarefas a ponto de facilitar e organizar o desenvolvimento do projeto. Por outro lado, uma superdocumentação pode dividir demais, reduzindo os problemas a coisas extremamente simples, porém muito numerosas.
+
+### Descrever como itens selecionados se relacionam
+
+A identificação dos relacionamentos entre os itens é importnate para a manutenção. Permite que se localizem rapidamente os itens afetados em cada alteração.
+
+### Planejar os referenciais dentro do ciclo de vida do projeto
+
+Planejamento dos **Marcos de Referência**
+
+### Descrever como os itens serão arquivados e recuperados do repositório
+
+Definição de quem deve arquivar e recuperar itens no repositório e como isso deve ser feito.
+
+## Identificação dos itens de configuração
+
+Planejamento da identificação dos itens de configuração. Por exemplo, nomear um artefato com "vX.Y.Z" de acordo com sua versão dentro do planejamento to projeto. Estratégias de atribuição de nomes únicos também faz parte desta etapa.
+
+Observe alguns exemplos de informações que podem ser reconhecidas pelo nome do item:
+
+- Evolução de cada uma das versões dos componentes
+- Hierarquia existente entre componentes
+- Cliente
+- Linguagem de programação
+- Status do desenvolvimento
+- Plataforma de hardware
+- Data de criação
+
+## Controle de mudanças
+
+O controle de mudanças através de pedidos de alteração facilita a gerencia de quem faz o quê e quando. É possível, dessa forma, identificar tarefas mais importantes/urgentes.
+
+Procedimentos formais de organização e de controle de mudanças no sistema permitem que:
+
+- Os pedidos de alteração possam ser considerados em conjunto com outros pedidos
+- Pedidos similares possam ser agrupados
+- Pedidos incompatíveis, entre si ou com os objetivos do sistema, possam ser identificados
+- Sejam atribuídas prioridades aos pedidos
+
+> **slide 39 ????**
+
+Exemplo de registro de solcitação de mudança:
+
+- Projeto
+- Responsável pela mudança
+- Data da solicitação
+- Mudança a ser feita
+- Componentes afetados
+- Justificativa
+- Priotidade
+- Tempo estimado
+- Responsável pela autorização
+- Data da autorização
+- Autorização (Sim/Não)
+
+## Controle de versões
+
+Um item, ao ser desenvolvido, passa por vários estados, várias versões até que cumpra o propósito para o qual foi criado. Versões distintas podem incluir diversas alterações, como por exemplo:
+
+- Funcionalidades distintas
+- Desempenhos aprimorados
+- Defeitos corrigidos
+- Funcionalidades equivalentes, diferentes configurações de hardware e software
+
+As versões são todas armazenadas e identificadas, mas com base nas alterações e não nos arquivos em si (por motivos óbvios de redução de custo de armazenamento), e para isso usam-se deltas
+
+### Delta Negativo
+
+Armazena as diferenças (deltas) existentes até então e a versão mais recente.
+
+### Delta Positivo
+
+Armazena a versão mais antiga e, para montas as vers~es mais recentes, processam-se as diferenças (deltas) armazenadas.
+
+### *Release*
+
+Uma liberação (ou *release*) é uma versão distribuída para os clientes. Naturalmente, é comum ter muito mais versões do que liberações.
+
+## Auditoria de configuração
+
+### Auditoria Funcional
+
+### Auditoria Física
+
+## Preparação de relatórios de estado
+
+## Controle de Interface
+
+## Controle de subcontratados e fornecedores
+
+
+
