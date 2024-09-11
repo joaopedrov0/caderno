@@ -347,3 +347,25 @@ Artefatos (produtos gerados ao longo do desenvolvimento)
 - Representação da arquitetura
 
 
+
+# Gerenciamento de Configuração de Software
+
+## Configurações de software (Comparável à Versão de software)
+
+Subconjunto de artefatos do desenvolvimento de software que terão suas alterações controladas
+
+Exemplos de artefatos:
+
+- Programas
+- Diagramas
+- Descrições de processos
+- Manuais
+
+## Marco de referência (Milestone)
+
+Artefato que foi devidamente revisado e aprovado, portanto, confia-se que ele está correto e não se deve alterá-lo.
+
+> Exemplo
+> Ao final de uma Definição do Sistema, pode-se gerar um documento de Especificação do Sistema. Esse documento, quando devidamente revisado e aprovado, demarca o final da etapa de Definição do Sistema, portanto pode ser considerado um **Marco de Referência**.
+
+Um Marco de Referência serve como base para construções futuras.
