@@ -1,4 +1,4 @@
-# Análise de Complexidade
+# Eficiência
 
 ## Medição de Eficiência
 
@@ -19,3 +19,13 @@ Mede eficiência do software com base na memória usada para executar a tarefa.
 A escolha do método a ser utilizado para medir a eficiência depende do objetivo do sistema. Deve-se analisar qual é a prioridade do seu problema que o sistema deve resolver, se é trabalhar com recursos de memória mais escassos, ou dispor de um alto tempo de resposta.
 
 ## Medição por Contagem de Instruções
+
+
+
+# Análise de Complexidade
+
+## Perguntas da análise
+
+- Ao dobrar o n, o n° de passos dobra? Ou então não muda? Ou vai além?
+- Ao dobrar o n, a memória dobra? 
+- O que é medir? Obter a ordem de grandeza da quantidade de passos executados de acordo com o tamanho da entrada
