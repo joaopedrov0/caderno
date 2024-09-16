@@ -1,5 +1,35 @@
 # Classes
 
+O conceito de classes é algo fundamental para o entendimento de Orientação a Objetos. Trata-se de um modo mais estruturado de criar objetos na programação.
+
+Em python a criação de uma classe se dá da seguinte forma:
+
+```python
+class NomeClasse: # Nome da classe com primeira letra maiúscula por convenção.
+
+    lorem = "ipsum" # Exemplo de atributo de de classe
+
+    # Construtor da classe
+    def __init__(self, argumento1, argumento2, argumentoN):
+        self.atributo1 = argumento1
+        self.atributo2 = argumento2
+        self.atributoN = argumentoN
+
+    # Método de instância da classe (método que é dos objetos da classe)
+    def metodoInstancia(self, bar):
+        return foo(bar)
+
+    # Método de classe
+    @classmethod
+    def metodoClasse(cls, bar):
+        return foo(bar)
+
+    # Método Estático
+    @staticmethod
+    def metodoEstatico(bar):
+        return foo(bar)
+```
+
 ... colocar explicação a respeito de classes com exemplos também
 
 ## Atributos de Classe
@@ -18,7 +48,7 @@ Métodos compartilhados entre todas as instâncias e que podem ser usados para m
 ```python
 class Example:
     @classmethod
-    def exampleMethod():
+    def exampleMethod(cls, bar):
         foo()
         return bar
 ```
