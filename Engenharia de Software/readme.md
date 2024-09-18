@@ -474,4 +474,97 @@ Uma liberação (ou *release*) é uma versão distribuída para os clientes. Nat
 ## Controle de subcontratados e fornecedores
 
 
+# Planejamento do Projeto
 
+???
+
+
+# Levantamento de Requisitos
+
+Os requisitos são as condições que o sistema deve atender
+
+Observe abaixo exemplos de tipos de requisitos importantes a serem definidos com exemplos entre parênteses:
+
+- Requisito de Funcionalidade (Permitir que cada usuário tenha suas próprias configurações de fonte e imagem de fundo) `Requisitos Funcionais`
+- Requisito de Restrição (Não permitir mais de 3 tentativas de autenticação dentro de 5 minutos) `Requisitos Funcionais`
+- Requisito de Atributo de Qualidade (Efetivar pagamento em até 30 segundos) `Requisitos Arquiteturais`
+- Requisito de Negócio (Direcionar o sistema para o público de 15 a 30 anos) `Requisitos Arquiteturais`
+
+## Elicitação
+
+Identificação dos Requisitos do sistema
+
+### Análise de Domínio
+
+Análise do ambiente em que o sistema será inserido
+
+- Papéis, objetos, locais e eventos comuns
+- Características e comportamentos recorrentes
+- Palavras e jargões da área
+
+> #### Exemplo no domínio de teatro
+> - Ator, diretor, roteirista, palco, coxia, camarim, ensaio
+> - Usar maquiagem e figurino, montar o cenário
+> - *Performance*, "merda!"
+
+Análises de Domínio podem ser feitas com interações com as partes interessadas no sistema (pessoas que têm algum interesse no sistema, *stakeholders*)
+
+> #### Exemplos de *stakeholders*
+> - Gerente de projeto
+> - Analista
+> - Engenheiro de Software
+> - Programador **?**
+> - Testador
+> - Mantenedor
+> - Cliente
+> - Usuário
+
+> #### Exemplos de interações com as partes interessadas
+> - Entrevistas
+> - Questionários
+> - Reuniões
+> - Cenários (Descrição de uma interação com o sistema do ponto de vista de uma parte interessada)
+> - Observação em campo
+> - Estudo de dispositivos e sistemas de apoio
+> - Estuod de documentos específicos
+> - Consultoria especializada
+> - Estudo de sistemas similares
+> Exemplo de cenário: "Um usuário remoto solicita um relatório de um banco de dados pela internet durante um período de pico e recebe o relatório em cinco segundos."
+
+## Especificação
+
+Detalhamento dos requisitos
+
+- Condição a ser atendida
+- **Forma de medição e critério de satisfação (Métrica objetivamente testável)**
+- Influência em e de outros requisitos
+- Prioridade do critério adotado
+
+| ID | Requisito | Forma de medição e critério de satisfação | Requisitos relacionados | Importância |
+| --- | --- | --- | --- | --- |
+| R4 | O sistema deve ser de fácio uso de forma que os usuários cometam poucos erros | Conta-se a média de erros que usuários escolhidos pelo cliente cometem no 1° mês de uso. O requisito é atendido se a média for de até 2 erros/dia | R1, R3 | Alta |
+
+> Requisitos que exigem ou restringem funcionalidades para o usuário são chamados de requisitos funcionais
+
+> Requisitos que definem atributos de qualidade ou de negócio são chamados de requisitos não funcionais, de qualidade ou arquiteturais
+
+## Validação
+
+Confirmação com as partes interessadas de que os requisitos especificados estão corretos e não está faltando nenhum.
+
+Essa etapa é importante para detectar antecipadamente defeitos, aumentar a produtividade e diminuir o custo do projeto.
+
+### Inspeção de Software
+
+Leitura do doumento usando técnicas que dizem ao revisor o quê procurar no documento durante a leitura
+
+- Leitura Baseada em Perspectiva (PBR)
+- Lista de verificação (*checklist*)
+
+#### Leitura Baseada em Perspectiva
+
+A revisão é feita sob a perspectiva de cada parte interessada (cliente, usuário, gerente, programador, etc...). Caso não sera possível que todos os interessados revisem os requisitos, os membros do projeto devem assumir o papel desses interessados e fazem a revisão sob sua perspectiva.
+
+#### Lista de verificação
+
+Cria-se uma lista com questões quanto aos tipos de defeitos a se verificar nos requisitos e cada parte interessada percorre a lista de verificação conferindo a situação do sistema quanto a cada questão.
