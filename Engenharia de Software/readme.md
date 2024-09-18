@@ -1,3 +1,21 @@
+# Caderno de Engenharia de Software
+
+Boas vindas ao caderno utilizado para tomar notas durante as aulas de Engenharia de Software I
+
+# Sumário
+
+[Teoria Geral de Sistemas](#teoria-geral-de-sistemas)
+
+[Processo de Software](#processo-de-software)
+
+[Modelos de Processo de Software](#modelos-de-processo-de-software)
+
+[Gerenciamento de Configuração de Software](#gerenciamento-de-configuração-de-software)
+
+[Levantamento de Requisitos](#levantamento-de-requisitos)
+
+[Análise do Sistema](#análise-do-sistema)
+
 # Teoria Geral de Sistemas
 
 
@@ -579,3 +597,182 @@ A revisão é feita sob a perspectiva de cada parte interessada (cliente, usuár
 #### Lista de verificação
 
 Cria-se uma lista com questões quanto aos tipos de defeitos a se verificar nos requisitos e cada parte interessada percorre a lista de verificação conferindo a situação do sistema quanto a cada questão.
+
+# Análise do Sistema
+
+Definição do quê deve ser ser feito **para o cliente** validar.
+
+Nesta etapa objetiva-se especificar o que o sistema deve fazer, e não como será feito.
+
+Quando o cliente estiver de acordo com o que entendemos que o sistema deve fazer, aí sim devemos passar para as etapas de definir como isso deve ser feito.
+
+Os documentos de comunicação com o cliente devem ser de alto nível de abstração, sem detalhes técnicos, facilitando ao máximo o entendimento do documento por leigos em computação.
+
+Exemplos de documentos em alto nível de abstração
+
+- Modelo de casos de uso
+- Diagramas de sequência do sistema (um para cada caso de uso)
+- Mapa de navegação
+- Modelo conceitual
+- Outros
+
+## Casos de Uso
+
+O modelo de casos de uso direciona diversas tarefas posteriores do ciclo de vida do software.
+
+Além disso, o modelo de casos de uso força o desevolvedor a moldar o sistema de acordo com o usuário
+
+O modelo de casos de uso modela os requisitos funcionais do sistema. Depende de que se tenha um entendimento ao menos parcial dos requisitos do sistema
+
+Um modelo de casos de uso de um sistema compreende um diagrama de casos de uso e asa descrições desses casos
+
+> ### Nota informal
+> O modelo de casos de uso basicamente tentar se colocar no lugar do usuário final antes do sistema ser criado e imaginar como seria o uso do sistema, descrevendo ao máximo para ter um norte na hora do desenvolvimento
+
+### Diagrama de Casos de Uso
+
+É responsável por representar graficamente os atores, casos de uso, relacionamentos entre os elementos do sistema e seu limite.
+
+- Casos de uso
+- Atores
+- Relacionamentos entre casos de uso e atores
+- Limite ou Escopo do sistema
+
+Tem o objetivo de ilustrar em um nível alto de abstração quais elementos **externos** interagem com quais **funcionalidades** do sistema.
+
+#### O que são casos de uso?
+
+Um caso de uso **representa quem faz o quê com o sistema, sem considerar o comportamento interno do sistema**.
+
+> #### Nota informal
+> Casos de uso são casos hipotéticos imaginários de uso do sistema.
+
+O modelo de casos de uso é uma **representação das funcionalidades externamente observáveis do sistema** e dos elementos externos ao sistema que interagem com o mesmo.
+
+> #### Nota informal
+> Os casos de uso não se importam com o processo de uso de uma funcionalidade, mas sim com os pontos de interesse do sistema. Tipo, se tu fosse explicar pra algm oq q da pra fazer com Discord, tu n precisa falar nada de login nem nada do tipo, pode ir direto pra "fazer ligações" ou "organizar eventos" ou "gerenciar comunidades".
+
+
+Um caso de uso é um **processo, relativamente grande, com início e fim próprios**, que  normalmente inclui várias transações ou operações de entrada e saída
+
+Iniciado com verbo para enfatizar que é uma ação, como nos exemplos abaixo
+
+- Sacar dinheiro (Caixa automático)
+- Matricular-se em disciplina
+
+Casos de uso **não** representam um passo individual ou uma operação interna. **Não** são casos de uso:
+
+- Login
+- Imprimir recibo
+
+#### Atores
+
+Elemento **externo** que **interage** com o sistema
+
+- "Externo": atores não fazem parte do sistema
+- "Interage": um ator troca informações com o sistema
+
+Casos de uso representam uma sequência de interações entre o sistema e atores, no sentido de troca de inormações entre eles
+
+Normalmente um agente externo inicia a sequência de interações com o sistema, ou um evento acontece para que o sistema responda.
+
+Um ator corresponde a um **papel** representado em relação ao sistema
+
+- Uma pessoa pode desempenhar o papel de Funcionário de uma instituição bancária que realiza a manutenção de um caixa eletrônico, mas também pode ser o Cliente do banco que realiza o saque de uma quantia.
+- O mesmo indivíduo pode ser o Cliente que compra mercadorias e o Vendedor que processa vendas.
+
+O nome dado a um ator deve lembrar o seu papel, ao invés de lembrar quem o representa
+
+Exemplos de atores:
+
+- Pessoas (Empregado, Cliente, Gerente, Almoxarife, Vendedor, etc.)
+- Organizações (Empresa Fornecedora, Agência de Impostos, Administradora de Cartões, etc.)
+- Outros sistemas (Sistema de Cobrança, Sistema de Estoque de Produtos, etc.)
+- Equipamentos (Leitora de Código de Barras, Sensor, etc.)
+
+O diagrama de casos de uso mostra o relacionamento entre os atores e os casos de uso dentro de um sistema
+
+- Um caso de uso é representado por uma elipse contendo seu nome
+- Um ator pode ser representado com um retângulo com o estereótipo `<<ator>>` ou pela figura de uma pessoa estilizada
+
+> #### Nota Informal
+> Um ator é literalmente qualquer coisa que interaja com o sistema de alguma forma e que n é vc que vai desenvolver, pode ser uma maquina, outro sistema, uma pessoa... qlq coisa.
+
+#### Relacionamentos
+
+Casos de uso e atores não existem sozinhos. Existem relacionamentos entre eles:
+
+- Comunicação
+- Inclusão
+- Extensão
+- Generalização ou Herança
+
+##### Comunicação
+
+- Representa a informação de quais atores estão associados a que casos de uso
+- É o mais comum dos relacionamentos
+- O fato de um ator estar associado a um caso de uso significa que esse ator interage (troca informações) com o sistema
+- Um ator pode se relacionar com mais de um caso de uso
+
+Um relacinamento de comunicação é representado por uma linha sem ponta ligando ator e caso de uso
+
+Neste diagrama **não** se representa a ordem em que os casos de uso ocorrem
+
+##### Inclusão
+
+- Existe somente entre casos de uso
+- A inclusão é representada por uma seta tracejada de ponta aberta do caso de uso base para o incluído com o estereótipo `<<inclui>>`
+- Usado em dois casos
+    1. Quando há funcionalidades distintas de interesse do usuário e, por coincidência, uma requer internamente a outra (Por exemplo, comprar um ingresso no cinema e verificar os lugares disponíveis. Não tem como comprar um ingresso sem verificar os lugares disponíveis, mas verificar os lugares disponíveis não requer a compra do ingresso, portanto, por ambas atividades por si só já são casos de uso válidos)
+    2. Quando funcionalidades compartilham uma mesma sequência de passos para evitar repetição.
+        Quando dois ou mais casos de uso incluem uma sequênia de interações em comum, esta sequência pode ser descrita em um outro caso de uso. Esse caso de uso em comum evita a descrição de uma mesma sequência de interações mais de uma vez e torna a descrição dos casos de uso mais simples
+
+##### Extensão
+
+- Existe somente entre casos de uso
+- Utilizado para modelar situações onde diferentes sequências de interações podem ser inseridas em um caso de uso
+- Cada uma das diferentes sequências representa um comportamento opcional, que só ocorre sob certas condições ou cuja realização depende da escolha do ator
+- Separar um comportamento obrigatório de outro opcional
+- Separar um trecho de casos de uso que será executado apenas em determinadas condições
+- Separar trechos que dependam da interação com um determinado ator
+- Um caso d euso estende outro se ele (eventualmente) adiciona comportaments ao caso de uso base
+- Sejam A e B dois casos de uso
+    - Um relacionamento de extensão de B para A indica que um ou mais dos cenários de A podem incluir o comportamento especificado por B
+    - Neste caso, diz-se que B estende A
+    - O caso de uso A é chamado de estendido e o caso de uso B o extensor
+- Quando um ator opta por executar a sequência de interações definida no extensor, este é executado
+- Após a sua execução, o fluxo de interações volta ao caso de uso estendido, recomeçando logo após o ponto em que o extensor foi inserido
+- Não necessariamente o comportamento definido pelo caso de uso extensor é realizado
+- Os relacionamentos de extensão são representados por uma seta tracejada de um caso de uso para outro. A seta recebe o estereótipo `<<estende>>` ou ``<<extends>>``.
+
+##### Generalização ou Herança
+
+A generalização (ou herança) acontece quando um ator ou caso de uso herda características de outro.
+
+Imagine um sistema de gerenciamento de uma loja.
+
+Nesse sistema existe um usuário que pode ter dois tipos diferentes, administrador e funcionário. Ambos fazem tudo que um usuário comum faz e mais algumas coisas específicas.
+
+Até agora, temos os atores "Administrador" e " Usuário" que tem uma herança em comum, o ator "usuário"
+
+Agora vamos para os casos de uso.
+
+Imagine que dentro do sistema nós temos 3 casos de uso (apenas para fins didáticos).
+
+- Gerenciar Dados
+- Gerenciar Clientes
+- Gerenciar Produtos
+
+Nesse exemplo, Gerenciar Dados é um uso abrangente que engloba tanto o gerenciamento de clientes quanto o de produtos. Isso significa que o "Gerenciar de Clientes" e o "Gerenciamento de Produtos" estão contidos em "Gerenciar Dados", ou seja, tudo que "Gerenciar Clientes" faz, "Gerenciar Dados" também faz, e o mesmo ocorre com "Gerenciar Produtos".
+
+Adicionalmente, podemos aprofundar mais ainda o exemplo, pois "Gerenciar Cliente" pode ter outros Casos de Uso que **herdam suas características**, como os exemplos abaixo:
+
+- Excluir Cliente
+- Adicionar Cliente
+- Editar Cliente
+
+Todos esses casos de uso hipotéticos teriam uma herança em comum, "Gerenciar Cliente", e todas as suas características estariam presentes nesse caso mais abrangente.
+
+### Descrição Textual de Casos de Uso
+
+Próxima aula
