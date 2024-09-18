@@ -463,9 +463,20 @@ Uma liberação (ou *release*) é uma versão distribuída para os clientes. Nat
 
 ## Auditoria de configuração
 
+Assegura que as alterações foram implementadas apropriadamente
+
 ### Auditoria Funcional
 
+Preocupa-se com aspectos internos dos arquivos, compreendendo uma verificação técnica formal dos itens de configuração (qualidade de software). Tenta descobrir omissões ou erros na configuração que degradam os padrões de construção do software.
+
 ### Auditoria Física
+
+Processo administrativo que ocorre no final de cada fase do ciclo de vida do software.
+
+Verifica a configuração a ser congelada como marco referencial
+
+- Se é composta da versão mais recente dos itens de configuração
+- Se os procedimentos e padrões foram devidamente aplicados
 
 ## Preparação de relatórios de estado
 
