@@ -539,14 +539,14 @@ Análise do ambiente em que o sistema será inserido
 Análises de Domínio podem ser feitas com interações com as partes interessadas no sistema (pessoas que têm algum interesse no sistema, *stakeholders*)
 
 > #### Exemplos de *stakeholders*
-> - Gerente de projeto
+> - Gerente de projeto (Gerenciamento de cronograma, orçamento)
 > - Analista
 > - Engenheiro de Software
-> - Programador **?**
+> - Programador (Como por exemplo, alguma especificação técnica a respeito das ferramentas que seão utilizadas. "Não vamos usar a biblioteca X porque ela não está disponível para Linux")
 > - Testador
 > - Mantenedor
 > - Cliente
-> - Usuário
+> - Usuário (Funcionalidades)
 
 > #### Exemplos de interações com as partes interessadas
 > - Entrevistas
