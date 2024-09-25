@@ -714,7 +714,7 @@ Casos de uso e atores não existem sozinhos. Existem relacionamentos entre eles:
 - O fato de um ator estar associado a um caso de uso significa que esse ator interage (troca informações) com o sistema
 - Um ator pode se relacionar com mais de um caso de uso
 
-Um relacinamento de comunicação é representado por uma linha sem ponta ligando ator e caso de uso
+Um relacinamento de comunicação é representado por uma linha **sem ponta** ligando ator e caso de uso
 
 Neste diagrama **não** se representa a ordem em que os casos de uso ocorrem
 
@@ -775,4 +775,75 @@ Todos esses casos de uso hipotéticos teriam uma herança em comum, "Gerenciar C
 
 ### Descrição Textual de Casos de Uso
 
-Próxima aula
+A Descrição Textual de Casos de Uso se dá por meio de uma descrição "narrativa" de um exemplo de caso de uso, quase como uma "pequena história" mesmo. Elas contam o passo a passo de um ator em uma interação com o sistema.
+
+#### Formas de caracterizar os Casos de Uso
+
+- Formato
+- Tipo
+- Grau de detalhamento
+
+##### Formato
+
+- Descrição contínua
+- Descrição numerada
+- Descrição particionada
+
+> ###### Nota Informal
+> A descrição contínua é basicamente um texto em prosa descrevendo a interação entre o ator e o sistema, naturalmente organizado em parágrafos, etc.
+> A descrição numerada meio que lista as interações entre o ator e o sistema de modo ordenado, numerado
+> A descrição particionada é igual a numerada, com a diferença que ela divide as interações onde o ator age e onde o sistema age
+
+##### Tipo
+
+- Primários
+    - Processos mais importantes
+- Secundários
+    - Processos menos importantes ou raros
+- Opcionais
+    - Processos que podem não ser incluídos no sistema
+
+
+##### Grau de Detalhamento
+
+- Alto nível ou Resumido
+- Expandido ou Completo
+
+Descrições em **Alto nível (ou Resumido)** descrevem o processo sucintamente, em duas ou três sentenças. São vagos a respeito de decisões de projeto e são úteis na fase inicial da engenharia de requisitos. Deve usar nome de atores com letra maiúscula e usar verbos para nomear os casos de uso.
+
+Observe um exemplo em **Alto nível (ou Resumido)**
+
+| Caso de uso | Resumo |
+| --- | --- |
+| Comprar itens | 1. Cliente insere seu cartão no caixa eletrônico. <br>2. Sistema exibe menu de operações disponíveis. <br>3. Cliente indica que deseja realizar um saque. <br>4. Sistema apresenta solicitação de senha. <br>5. Cliente digita senha. <br>6. Sistema solicita quantia a ser sacada. <br>7. Cliente retira a quantia e recibo. |
+
+Descrições do tipo **Expandido (ou Completo)** geralmente são escritos em um formato "conversacional" (ou interativo) entre os atores e o sistema. Essas descrições são divididas entre 3 partes:
+
+- Parte 1: Resumo
+- Parte 2: Sequência Típica de Eventos
+- Parte 3: Sequências Alternativas
+
+Observe um exemplo **Expandido (ou Completo)** Parte 1: Resumo
+
+| Caso de uso | Atores e interesses | Tipo | Referências | Objetivo |
+| --- | --- | --- | --- | --- |
+| Comprar itens com dinheiro | Cliente (iniciador): deseja obter produtos por meio da compra com dinheiro<br>Caixa: deseja efetuar a venda de produtos de forma segura | Primário | Requisitos R1, R2, R3, R7, R9 | Capturar a venda e seu pagamento em dinheiro |
+
+Observe um exemplo **Expandido (ou Completo)** Parte 2: Sequência Típica
+
+| Ator | Sistema |
+| --- | --- |
+| 1. Este caso de uso começa quando o Cliente chega ao TPV com itens para comprar |  |
+| 2. O Caixa registra o identificador de cada item. Se há mais de um do mesmo item, o caixa também entra a quantidade | 3. Determina o preço do item e adiciona informação sobre o item à transação de venda corrente. A descrição e o preço do item são apresentados |
+| 4. Quando termina a entrada dos itens, o Caixa indica ao TPV que as entradas estão completas | 5. Calcula e apresenta o total da venda |
+| 6. O Caixa informa o total ao cliente |  |
+| 7. O cliente escolhe o tipo de pagamento: <br>1. Se for paamento em dinheiro, ver seção *Pagamento em Dinheiro* <br>2. Se for pagamento por cartão de crédito, ver seção *Pagamento por Cartão de Crédito*<br>3. Se for pagamento por cheque, ver seção *Pagamento em Cheque* |  |
+|  | 8. Registra a venda completada |
+| 9. O Caixa entrega ao cliente o recibo impreso ao Cliente |  |
+| 10. O Cliente sai com os itens comprados |  |
+
+Observe um exemplo **Expandido (ou Completo)** Parte 3: Sequência alternativa
+
+(falta falar sobre pontos de decisão e sequência alternativa)
+
+<Terminar...>
