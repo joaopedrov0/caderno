@@ -101,3 +101,22 @@ Atributos distribuídos entre todas as instâncias de objetos da classe. Recebem
 ### Métodos de instância de Classe
 
 Métodos distribuídos entre todas as instâncias de objetos da classe. Recebem a palavra chave `self` para se referir ao objeto.
+
+
+# Relação de Classes
+
+> ## Tipos de relações entre classes
+> - Associação
+> - Herança
+> - Interface
+> - Agregação
+> - Composição
+
+## Associação de Classes
+
+...
+
+explicar melhor depois !
+
+mas basicamente oq ele fala é de uma classe que usa uma instância de outra classe tlgd
+tipo, uma classe pessoa que tem um metodo que depende de uma classe interruptor pra conseguir apagar a luz
