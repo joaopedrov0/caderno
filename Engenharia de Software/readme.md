@@ -847,3 +847,38 @@ Observe um exemplo **Expandido (ou Completo)** Parte 3: Sequência alternativa
 (falta falar sobre pontos de decisão e sequência alternativa)
 
 <Terminar...>
+
+
+
+## Diagrama de Sequência do Sistema
+
+Um Diagrama de Sequência do Sistema ilustra os eventos de entrada e saída do sistema. Para uma sequência específica de eventos d eum caso de uso, o diagrama mostra:
+
+- Atores que interagem com o sistema
+- O sistema, como uma "caixa-preta", sem detalhes técnicos
+- Eventos gerados pelos atores
+- Eventos entre sistemas
+- Operações de resposta do sistema
+- A ordem dos eventos
+
+### "Como fazer" o DSS
+
+> #### Nota Informal
+> Basicamente esse ngc tem q descrever as interações do usuario com o sistema e falar como o sistema responde dependendo da interação, ai tipo tu pode clc uma linha vertical representando o usuario e outra representando o sistema, ai tu faz as setas nomeando qual interação ou resposta é representada por aquela linha
+
+#### Traçando interações
+
+Iniciando algo: Linha contínua
+Respondendo algo: Linha tracejada
+
+Sempre assumir que o sistema começa na tela inicial
+
+1 diagrama de sequencia pra cada caso de uso
+
+#### Laços e condicionais
+
+É possível que seja representado um laço de repetição ou um ponto de decisão em um siagrama de sequência, para isso deve-se fazer um quadro marcado no canto superior esquerdo com o tipo do quadro, como por exemplo "laço".
+
+No caso do laço especificamente, logo abaixo ao ao lado da descrição "Laço", deve-ser descrever quando esse laço deve finalizar sua repetição.
+
+No caso da tomada de decisão, o quadro deve ser dividido com uma linha horizontal (separando baixo e cima), deve ter a marcação "Alternativa" no canto superior esquerdo do quadro, e semelhante à condição de repetição do quadro de laço, deve ter uma marcação no canto do quadro definindo quais são as condições da tomada de decisão. Cada divisão do quadro deve descrever o que acontece caso cada alternativa seja escolhida.
