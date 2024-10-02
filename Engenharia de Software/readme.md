@@ -885,4 +885,20 @@ No caso da tomada de decisão, o quadro deve ser dividido com uma linha horizont
 
 #### Outros Atores
 
-É possível que o sistema interaja com mais atores que nem são o cliente e nem fazem parte do sistema em si. Para isso, é possível adicionar outros atores com mais linhas verticais representando eles. Todas as outras mecânicas explicadas anteriormente são válidas com esses novos atores
+É possível que o sistema interaja com mais atores que nem são o cliente e nem fazem parte do sistema em si. Para isso, é possível adicionar outros atores com mais linhas verticais representando eles. Todas as outras mecânicas explicadas anteriormente são válidas com esses novos atores.
+
+> Observação: É importante tomar cuidado para não adicionar atores e interações desnecessárias no diagrama, uma vez que a intenção do diagrama é justamente entender como o processo vai funcionar no sistema, então pode ser que algum ator tenha um papel importante no processo, mas que não seja algo que está diretamente relacionado ao funcionamento do sistema, portanto não há necessidade de descrever.
+
+#### Passagem de parâmetros
+
+É possível que uma determinada ação tenha algum parâmetro importante de ser passado. Nesse caso estes parâmetros podem ser passados logo ao lado da descrição das interações, entre parênteses. Essa passagem de parâmetros é válida tanto para o incicio de uma ação quanto para uma resposta, mas geralmente não costuma aparecer em respostas.
+
+> Exemplo: Ao adicionar um produto ao carrinho de uma loja virtual, por exemplo, é válido passar para o sistema qual o ID e a quantidade do produto a ser adicionado
+
+##### Parâmetros opcionais
+
+É possível definir um parâmetro como opcional de forma explícita através de uma conexão de uma caixa marcada como "Opcional" até o parâmetro em questão
+
+#### Reutilização de Diagrama de Sequência
+
+Caso você note durante o desenvolvimento do diagrama que tem uma certa parte que é exatamente igual e se repete várias vezes, é possível demarcar um quadro como "Referência" e dentro dele você descreve qual diagrama acontece naquela posição. E separado, você pode criar esse outro diagrama que vai substituir o quadro de referência em questão.
