@@ -882,3 +882,7 @@ Sempre assumir que o sistema começa na tela inicial
 No caso do laço especificamente, logo abaixo ao ao lado da descrição "Laço", deve-ser descrever quando esse laço deve finalizar sua repetição.
 
 No caso da tomada de decisão, o quadro deve ser dividido com uma linha horizontal (separando baixo e cima), deve ter a marcação "Alternativa" no canto superior esquerdo do quadro, e semelhante à condição de repetição do quadro de laço, deve ter uma marcação no canto do quadro definindo quais são as condições da tomada de decisão. Cada divisão do quadro deve descrever o que acontece caso cada alternativa seja escolhida.
+
+#### Outros Atores
+
+É possível que o sistema interaja com mais atores que nem são o cliente e nem fazem parte do sistema em si. Para isso, é possível adicionar outros atores com mais linhas verticais representando eles. Todas as outras mecânicas explicadas anteriormente são válidas com esses novos atores
