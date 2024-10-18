@@ -206,3 +206,28 @@ Por exemplo, vamos supor que precisemos ordenar uma lista desordenada com númer
 
 Note que não há necessidade de ordenar os elementos durante essa nova posição deles, pois depois de feita essa divisão e redisposição dos elementos, um novo pivô será escolhido para cada sublista e esse processo se repetirá recursivamente até que sobre apenas 1 elemento em cada sublista, nesse caso, já estariam ordenados corretamente.
 
+
+
+# Estruturas de Dados
+
+## Listas
+
+Array de objetos
+
+...
+
+head
+nó
+campos de nó
+
+### Listas Ligadas
+
+...
+
+### Listas Duplamente Ligadas
+
+...
+
+### Listas Circulares
+
+...
