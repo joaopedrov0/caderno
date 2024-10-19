@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta";
+
+    text-align: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(230, 230, 230, 1);
+}
+
+
+h1{
+    font-size: 48px;
+    margin-top: 100px;
+}
+
+h2{
+    margin-top: -10px;
+    opacity: 0.7;
+    margin-bottom: 100px;
+}
+
+.card-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a.card{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: clamp(300px, 20vw, 80vw);
+    height: 400px;
+    box-shadow: 5px 5px 15px rgba(200, 200, 200, 0.8);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 50px;
+    font-size: 32px;
+    color: aliceblue;
+    transition: all 200ms ease;
+}
+
+a.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.red{
+    background: rgb(255,103,22);
+    background: linear-gradient(37deg, rgba(255,103,22,1) 14%, rgba(250,23,23,1) 82%);
+}
+
+.green{
+    background: rgb(12,152,38);
+    background: linear-gradient(317deg, rgba(12,152,38,1) 14%, rgba(62,250,23,1) 82%);
+}
+
+.yellow{
+    background: rgb(205,215,30);
+    background: linear-gradient(317deg, rgba(205,215,30,1) 14%, rgba(250,160,23,1) 82%);
+}
+
+.blue{
+    background: rgb(48,30,215);
+    background: linear-gradient(120deg, rgba(48,30,215,1) 14%, rgba(31,176,239,1) 55%, rgba(23,241,250,1) 86%);
+}
+
+.purple{
+    background: rgb(213,30,215);
+    background: linear-gradient(322deg, rgba(213,30,215,1) 14%, rgba(174,31,239,1) 55%);
+}
+
+.brown{
+    background: rgb(129,67,20);
+    background: linear-gradient(322deg, rgba(129,67,20,1) 21%, rgba(239,128,31,1) 70%);
+}
