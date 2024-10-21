@@ -66,6 +66,7 @@ class Example:
 ```
 
 > ## Cuidado!
+>
 > Em outras linguagens, é comum usar a palavra chave `static` para referenciar atributos e métodos de classe. Em python, métodos estáticos são algo à parte, são métodos usados fora de contexto e que podem ser usados para testes.
 
 ## Instâncias de Classe
@@ -75,7 +76,8 @@ Instâncias de classe são objetos gerados com base nas "regras" de uma classe. 
 Observe o exemplo abaixo:
 
 person.py
-```python 
+
+```python
 class Person:
     race = "human"
     def __init__(self, name, age):
@@ -84,6 +86,7 @@ class Person:
 ```
 
 main.py
+
 ```python
 from person.py import Person
 
@@ -102,10 +105,10 @@ Atributos distribuídos entre todas as instâncias de objetos da classe. Recebem
 
 Métodos distribuídos entre todas as instâncias de objetos da classe. Recebem a palavra chave `self` para se referir ao objeto.
 
-
 # Relação de Classes
 
 > ## Tipos de relações entre classes
+>
 > - Associação
 > - Herança
 > - Interface
@@ -120,3 +123,14 @@ explicar melhor depois !
 
 mas basicamente oq ele fala é de uma classe que usa uma instância de outra classe tlgd
 tipo, uma classe pessoa que tem um metodo que depende de uma classe interruptor pra conseguir apagar a luz
+
+## Herança
+
+Quando uma classe "filho" ou "subclasse" herda características de uma classe "pai" ou "superclasse"
+
+### Sintaxe
+
+```python
+class SubClass(SuperClass):
+    pass
+```
